@@ -13,6 +13,20 @@ class JumbotronController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('jumbotron/index.html.twig');
+        $blocks = [
+            [
+                'head' => 'Heading 1',
+                'text' => 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'
+            ],
+            [
+                'head' => 'Heading 2',
+                'text' => 'Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'
+            ],
+            [
+                'head' => 'Heading 3',
+                'text' => 'Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.'
+            ]
+        ];
+        return $this->render('jumbotron/index.html.twig', ['blocks' => $blocks]);
     }
 }
