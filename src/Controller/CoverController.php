@@ -19,4 +19,13 @@ class CoverController extends Controller
     {
         return $this->render('cover/index.html.twig');
     }
+
+    /**
+     * @Route("/examples/cover/features", name="cover_features")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function featuresAction()
+    {
+        return $this->render('cover/features.html.twig');
+    }
 }
