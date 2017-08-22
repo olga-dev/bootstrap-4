@@ -1,10 +1,12 @@
+{% set route = app.request.attributes.get('_route') %}
+
 <div class="masthead clearfix">
     <div class="inner">
         <h3 class="masthead-brand">Cover</h3>
         <nav class="nav nav-masthead">
-            <a class="nav-link active" href="{{ path('cover_home') }}">Home</a>
-            <a class="nav-link" href="{{ path('cover_features') }}">Features</a>
-            <a class="nav-link" href="{{ path('cover_contact') }}">Contact</a>
+            <a class="nav-link {{ route ==  'cover_home' ? 'active' }}" href="{{ path('cover_home') }}">Home</a>
+            <a class="nav-link {{ route ==  'cover_features' ? 'active' }}" href="{{ path('cover_features') }}">Features</a>
+            <a class="nav-link {{ route ==  'cover_contact' ? 'active' }}" href="{{ path('cover_contact') }}">Contact</a>
         </nav>
     </div>
 </div>
