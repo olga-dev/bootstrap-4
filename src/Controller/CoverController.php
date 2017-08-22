@@ -28,4 +28,13 @@ class CoverController extends Controller
     {
         return $this->render('cover/features.html.twig');
     }
+
+    /**
+     * @Route("/examples/cover/contact", name="cover_contact")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function contactAction()
+    {
+        return $this->render('cover/contact.html.twig');
+    }
 }
