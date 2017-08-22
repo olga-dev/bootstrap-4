@@ -5,9 +5,11 @@
 {% endblock %}
 
 {% block body %}
-
-    {% block container %}
-
-    {% endblock %}
-
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                {% block container %}{% endblock %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
