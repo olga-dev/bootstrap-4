@@ -17,7 +17,7 @@ class CoverController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('cover/index.html.twig');
+        return $this->render('cover/home/index.html.twig');
     }
 
     /**
@@ -26,7 +26,7 @@ class CoverController extends Controller
      */
     public function featuresAction()
     {
-        return $this->render('cover/features.html.twig');
+        return $this->render('cover/features/index.html.twig');
     }
 
     /**
@@ -35,6 +35,6 @@ class CoverController extends Controller
      */
     public function contactAction()
     {
-        return $this->render('cover/contact.html.twig');
+        return $this->render('cover/contact/index.html.twig');
     }
 }
