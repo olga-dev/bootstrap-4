@@ -2,7 +2,176 @@ body {
     padding-top: 25px;
 }
 
-img {
-    height: 150px;
-    width: 200px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Sans Caption', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.sb-preview {
+    margin-bottom: 30px
+}
+
+.sb-preview .card {
+    border: 1px solid #ededed;
+    border-bottom: 3px solid #ededed;
+    background: #f5f5f5
+}
+
+.sb-preview .card .sb-preview-img {
+    transition: all 0.2s ease-in-out
+}
+
+.sb-preview .card .sb-preview-img:hover {
+    opacity: 0.7
+}
+
+.sb-preview .card .card-body {
+    padding: 1.5rem 1.5rem 0
+}
+
+.sb-preview .card .card-footer {
+    padding: 0.75rem 1.5rem 1.5rem;
+    border: 0;
+    background: transparent
+}
+
+.sb-preview .card .card-footer .btn {
+    font-size: 11px
+}
+
+.text-center {
+    text-align: center !important
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: .25rem
+}
+
+.h-100 {
+    height: 100% !important
+}
+
+@media (min-width: 576px) {
+    .card-img-top {
+        width: 100%;
+        border-top-left-radius: calc(.25rem - 1px);
+        border-top-right-radius: calc(.25rem - 1px)
+    }
+
+    .card-group .card:first-child .card-img-top {
+        border-top-right-radius: 0
+    }
+
+    .card-group .card:last-child .card-img-top {
+        border-top-left-radius: 0
+    }
+
+    .card-group .card:not(:first-child):not(:last-child) .card-img-top, .card-group .card:not(:first-child):not(:last-child) .card-img-bottom {
+        border-radius: 0
+    }
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+
+.card-title {
+    margin-bottom: .75rem
+}
+
+.card-text:last-child {
+    margin-bottom: 0
+}
+
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.125)
+}
+
+.card-footer:last-child {
+    border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px)
+}
+
+.btn-secondary {
+    color: #111;
+    background-color: #fff;
+    border-color: #fff
+}
+
+.btn-secondary:hover {
+    color: #111;
+    background-color: #ececec;
+    border-color: #e6e6e6
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5)
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+    background-color: #fff;
+    border-color: #fff
+}
+
+.btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
+    background-color: #ececec;
+    background-image: none;
+    border-color: #e6e6e6
+}
+
+.btn {
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: .25rem;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border: 0;
+    text-transform: uppercase;
+    font-family: 'PT Sans Caption', Helvetica, Arial, sans-serif;
+    font-weight: 700
+}
+
+.btn:focus, .btn:hover {
+    text-decoration: none
+}
+
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(184, 77, 69, 0.25)
+}
+
+.btn.disabled, .btn:disabled {
+    opacity: .65
+}
+
+.btn:active, .btn.active {
+    background-image: none
+}
+
+a.btn.disabled, fieldset[disabled] a.btn {
+    pointer-events: none
+}
+
+.btn-secondary {
+    border-bottom: 3px solid #d9d9d9
+}
+
+.btn-secondary:active, .btn-secondary:hover {
+    border-bottom: 3px solid #bfbfbf
 }

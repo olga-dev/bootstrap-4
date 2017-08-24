@@ -5,35 +5,67 @@
 {% endblock %}
 
 {% block body %}
-
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <img src="{{ asset('assets/default/image/jumbotron.png') }}" alt="">
-                <h2>Example Jumbotron</h2>
-                <div class="btn btn-lg btn-light">
-                    <a href="{{ path('jumbotron_home') }}">Jumbotron</a>
+            <div class="col-lg-4 col-md-6 sb-preview text-center">
+                <div class="card h-100">
+                    <a class="sb-preview-img" href="{{ path('jumbotron_home') }}">
+                        <img class="card-img-top" src="{{ asset('assets/default/image/jumbotron.png') }}"
+                             alt="Example Jumbotron">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">Jumbotron</h4>
+                        <p class="card-text">Example Jumbotron</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ path('jumbotron_home') }}" class="btn btn-secondary">Preview &amp; Download</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <img src="{{ asset('assets/default/image/fixed-top-navbar.png') }}" alt="">
-                <h2>Example navbar-top-fixed</h2>
-                <div class="btn btn-lg btn-light">
-                    <a href="{{ path('navbar-top-fixed_home') }}">Fixed top navbar</a>
+            <div class="col-lg-4 col-md-6 sb-preview text-center">
+                <div class="card h-100">
+                    <a class="sb-preview-img" href="{{ path('navbar-top-fixed_home') }}">
+                        <img class="card-img-top" src="{{ asset('assets/default/image/fixed-top-navbar.png') }}"
+                             alt="Fixed top navbar">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">Fixed top navbar</h4>
+                        <p class="card-text">Description</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ path('navbar-top-fixed_home') }}" class="btn btn-secondary">Preview
+                            &amp;Download</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <img src="{{ asset('assets/default/image/imag.png') }}" alt="">
-                <h2>Example carousel</h2>
-                <div class="btn btn-lg btn-light">
-                    <a href="{{ path('carousel_home') }}">Carousel</a>
+            <div class="col-lg-4 col-md-6 sb-preview text-center">
+                <div class="card h-100">
+                    <a class="sb-preview-img" href="{{ path('carousel_home') }}">
+                        <img class="card-img-top" src="{{ asset('assets/default/image/imag.png') }}"
+                             alt="Example carousel">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">Carousel</h4>
+                        <p class="card-text">Example carousel text</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ path('carousel_home') }}" class="btn btn-secondary">Preview &amp; Download</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <img src="{{ asset('assets/default/image/imag.png') }}" alt="">
-                <h2>Example cover</h2>
-                <div class="btn btn-lg btn-light">
-                    <a href="{{ path('cover_home') }}">Cover</a>
+            <div class="col-lg-4 col-md-6 sb-preview text-center">
+                <div class="card h-100">
+                    <a class="sb-preview-img" href="{{ path('cover_home') }}">
+                        <img class="card-img-top" src="{{ asset('assets/default/image/imag.png') }}"
+                             alt="Example cover">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">Cover</h4>
+                        <p class="card-text">Example cover text</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ path('cover_home') }}" class="btn btn-secondary">Preview &amp; Download</a>
+                    </div>
                 </div>
             </div>
         </div>
